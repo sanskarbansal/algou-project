@@ -24,6 +24,13 @@ const getProblems = catchAsync(async (req, res) => {
     res.send(problems);
 });
 
+const getProblem = catchAsync(async (req, res) => {
+    const { id } = req.params;
+    const problem = await problemService.getProblemById(id);
+    return res.send(problem);
+});
+
 module.exports = {
     getProblems,
+    getProblem,
 };

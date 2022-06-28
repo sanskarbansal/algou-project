@@ -1,0 +1,13 @@
+.problemList-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 4px #80808075;
+}
+.problemList-heading {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.problemList-problems {
+}

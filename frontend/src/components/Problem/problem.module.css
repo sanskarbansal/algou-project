@@ -1,0 +1,25 @@
+.problem-container {
+    padding: 20px;
+}
+.problem-title {
+}
+.problem-difficulty {
+}
+.problem-body {
+}
+.problem-editor {
+    border: 1px solid grey;
+    padding: 2px;
+}
+.problem-difficulty_easy {
+    color: green;
+}
+.problem-difficulty_medium {
+    color: blue;
+}
+.problem-difficulty_difficult {
+    color: red;
+}
+.error-title {
+    text-align: center;
+}

@@ -1,0 +1,3 @@
+.codeEditor:focus-visible {
+    outline: none !important;
+}

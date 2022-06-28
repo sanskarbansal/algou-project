@@ -1,4 +1,5 @@
 const { Problem } = require("../models/problem.model");
+const ApiError = require("../utils/ApiError");
 
 /**
  * Get Problem by id
@@ -7,7 +8,15 @@ const { Problem } = require("../models/problem.model");
  * @returns {Promise<Problem>}
  */
 async function getProblemById(id) {
-    return await Problem.findById(id);
+    let problem = null;
+
+    if (id.match(/^[0-9a-fA-F]{24}$/)) {
+        problem = await Problem.findById(id);
+    }
+
+    if (!problem) throw new ApiError(404, "Problem Not Found!");
+
+    return problem;
 }
 
 /**

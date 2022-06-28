@@ -1,0 +1,19 @@
+.problemItem-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+.problemItem-container:hover {
+    box-shadow: 0px 0px 1px #000000;
+}
+.problemItem-difficulty_easy {
+    color: green;
+}
+.problemItem-difficulty_medium {
+    color: blue;
+}
+.problemItem-difficulty_difficult {
+    color: red;
+}
